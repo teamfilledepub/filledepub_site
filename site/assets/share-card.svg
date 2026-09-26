@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#ffce00"/>
+  <g transform="translate(65 92) rotate(-5)" fill="#18191a" font-family="Arial,Helvetica,sans-serif" font-weight="900" letter-spacing="-3">
+    <text x="0" y="0" font-size="48">FILLE</text>
+    <text x="0" y="43" font-size="48">DE PUB.</text>
+  </g>
+  <g transform="translate(1008 102) rotate(10)">
+    <ellipse rx="123" ry="55" fill="#f4a7c4" stroke="#18191a" stroke-width="3"/>
+    <text x="0" y="7" text-anchor="middle" fill="#18191a" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="21">GUADELOUPE</text>
+  </g>
+  <g fill="#18191a" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="91" letter-spacing="-5">
+    <text x="58" y="298">VOS ANIMATIONS.</text>
+    <text x="58" y="399">PRENNENT VIE !</text>
+  </g>
+  <path d="M62 427 L897 410" fill="none" stroke="#18191a" stroke-width="7"/>
+  <rect y="510" width="1200" height="120" fill="#18191a"/>
+  <text x="62" y="558" fill="#ffce00" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="22" letter-spacing="1">AGENCE D’ANIMATIONS COMMERCIALES</text>
+  <text x="62" y="600" fill="white" font-family="Arial,Helvetica,sans-serif" font-size="23">On imagine. On produit. On installe. On anime.</text>
+</svg>

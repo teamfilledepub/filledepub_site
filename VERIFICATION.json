@@ -1,17 +1,21 @@
 {
-  "version": "0.1",
-  "source": "Captures utilisateur du 26/09/2026",
-  "repository_target": "teamfilledepub/filledepub_site",
-  "remote_write_status": "Site complet synchronisé sur GitHub ; accès en écriture confirmé",
-  "cloudflare_status": "Configuration prête pour Workers Builds ; aucun déploiement effectué",
+  "project": "Fille de Pub",
+  "repository": "teamfilledepub/filledepub_site",
+  "date": "2026-09-26",
+  "hosting": "Cloudflare Workers Static Assets",
+  "public_url": "https://filledepub-site.l-losange.workers.dev/",
   "checks": {
-    "js_syntax": "passed",
+    "javascript_syntax": "passed",
     "build": "passed",
-    "html_anchors_assets": "passed",
-    "css_delimiters": "passed",
-    "standalone_preview": "passed",
-    "browser_visual_and_interaction": "not_completed_environment_blocked",
-    "workers_deploy_dry_run": "passed (Wrangler 4.141.0)"
+    "workers_deploy_dry_run": "passed",
+    "html_anchors_and_assets": "passed",
+    "scroll_and_accordion_simulation": "passed",
+    "quote_validation_and_encoding": "passed",
+    "preview_and_production_seo_builds": "passed"
   },
-  "hosting_target": "Cloudflare Workers Static Assets"
+  "physical_iphone_safari": "not_tested",
+  "automatic_email_sending": "not_configured; client prepares an email for the visitor to send",
+  "custom_domain": "pending_connection_confirmation",
+  "legal_notice": "pending_verified_publisher_details",
+  "actual_campaign_photos_and_client_logos": "pending_client_assets"
 }

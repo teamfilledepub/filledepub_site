@@ -1,95 +1,83 @@
-# Fille de Pub — version 0.1
+# Fille de Pub
 
-Site vitrine indépendant pour une agence d’animations commerciales en Guadeloupe. Référence : captures du Google Sites fournies le 26 septembre 2026. Dépôt cible exclusif : https://github.com/teamfilledepub/filledepub_site.
+Site vitrine indépendant d’une agence d’animations commerciales en Guadeloupe.
 
-## Ce que contient cette version
+- Dépôt : https://github.com/teamfilledepub/filledepub_site
+- Site publié : https://filledepub-site.l-losange.workers.dev/
+- Hébergement : Cloudflare Workers avec Static Assets, compte Fille de Pub.
+- Branche de production : `main`. Les mises à jour déclenchent Workers Builds.
 
-- Une page responsive : accueil, agence, prestations, engagements, références et contact.
-- Jaune et noir du modèle, accents rose et bleu, typographie expressive.
-- Apparitions au défilement, bandeau animé, interactions au survol, prestations dépliables et menu mobile.
-- Bouton de pause des animations et respect des préférences de mouvement réduit du système.
-- Contact direct : `allo@filledepub.com`. Aucun formulaire ni envoi automatique de données.
-- Site statique sans dépendance JavaScript externe, sans base de données, sans traceur.
+## Fonctionnalités
 
-## Sources et limites
+Accueil, présentation de l’agence, prestations dépliables, engagements et contact. Navigation mobile, animations désactivables et respect du mouvement réduit. Sur petit écran ou appareil tactile, le titre de prestation le plus proche du centre de l’écran devient jaune au défilement.
 
-Les prestations, les références SOS PC MOBILE / Croque & Moi / EKHAYA HOME DECO, l’implantation en Guadeloupe et l’adresse de contact proviennent des captures. Les références sont présentées sous forme de noms, en attendant les fichiers des logos originaux. Les dix ans mentionnés concernent l’expérience décrite dans le modèle, pas l’âge supposé de l’entreprise. Aucun chiffre commercial, résultat chiffré ou témoignage ajouté.
+Le logo et « Retour en haut » ciblent le début du document. Le bandeau utilise deux groupes identiques, assez larges pour couvrir le viewport, avec une boucle sans décalage.
 
-L’image principale est une illustration générée à partir de la direction du modèle, explicitement présentée comme telle sur la page. Elle ne constitue pas une preuve de campagne réalisée. Le fichier original généré est conservé sans modification dans `site/assets/activation.png`.
+L’image d’accueil est servie en WebP avec trois tailles : 640, 960 et 1536 pixels. Le PNG original est conservé dans le dépôt mais exclu du site compilé. L’aperçu de partage est disponible en PNG 1200 × 630, avec son SVG source.
 
-Les mentions légales définitives ne sont pas inventées : les informations de l’éditeur restent à fournir. Le domaine `filledepub.com` apparaît dans les captures ; son usage définitif et le gestionnaire actuel restent à confirmer.
+## Demande de devis
 
-Cette version de revue demande la non-indexation via la balise robots, `robots.txt` et `_headers`. Ce n’est pas un contrôle d’accès. Lors du lancement définitif, ajuster ces trois réglages, ajouter l’URL canonique et le sitemap après validation du domaine et du contenu.
+Le formulaire prépare un e-mail adressé à `allo@filledepub.com`. Les champs sont validés, le visiteur relit son message, puis ouvre sa messagerie pour l’envoyer. Une copie du texte est proposée en complément.
 
-## Utilisation locale
+Le site ne transmet pas automatiquement de demande, n’enregistre pas les champs et ne prétend pas qu’un message a été envoyé. Aucun compte de service d’envoi d’e-mails n’est connecté. Un envoi direct nécessitera une configuration de messagerie vérifiée, une protection contre les abus et les informations de confidentialité correspondantes. Le lien e-mail reste utilisable sans JavaScript.
 
-Prérequis : Node.js 22 ou version ultérieure. Le site et sa compilation ne nécessitent aucun paquet externe. Pour installer Wrangler, l’outil de déploiement, exécuter `npm ci` ; sa version et ses dépendances sont verrouillées dans `package-lock.json`.
+## Contenu et informations à fournir
 
-```sh
-npm run dev
+Les prestations, l’expérience de plus de dix ans, les références SOS PC MOBILE / Croque & Moi / EKHAYA HOME DECO, la Guadeloupe et l’adresse e-mail proviennent des captures fournies. L’expérience annoncée ne désigne pas l’âge de l’entreprise.
+
+L’image principale est une illustration, signalée comme telle. Aucun témoignage, résultat commercial ou réalisation réelle n’est inventé. Pour compléter la version officielle, il manque :
+
+- l’identité légale de l’éditeur : raison sociale ou identité de l’entrepreneure, forme juridique, SIREN/SIRET, adresse du siège, capital si applicable, coordonnées et responsable de publication ;
+- les vrais logos, photos des opérations et éventuels témoignages validés ;
+- la confirmation du raccordement du domaine définitif.
+
+Aucune page de mentions légales incomplète n’est présentée comme définitive. Les DNS et la messagerie existante n’ont pas été modifiés.
+
+## Prévisualisation et lancement
+
+`site.config.json` définit l’adresse publique et l’indexation. La configuration actuelle garde la version Workers non indexée. `robots.txt` autorise le crawl pour permettre la lecture des directives `noindex` présentes dans le HTML et les en-têtes. Cette non-indexation n’est pas un contrôle d’accès.
+
+Après raccordement et vérification du domaine définitif et finalisation du contenu, configurer :
+
+```json
+{
+  "url": "https://filledepub.com",
+  "indexable": true
+}
 ```
 
-Pour générer les fichiers publiables :
+Le build met alors à jour les métadonnées de partage, ajoute l’adresse canonique et le sitemap et supprime les directives de non-indexation. Les variables `PUBLIC_SITE_URL` et `PUBLIC_INDEXABLE` peuvent remplacer le fichier de configuration. Une origine HTTPS est requise et le build refuse l’indexation de l’adresse `workers.dev`.
 
-```sh
-npm run build
-```
+## Développement et déploiement
 
-Ils sont copiés dans `dist/`. Pour un aperçu autonome à ouvrir par double-clic :
-
-```sh
-node scripts/preview.mjs Fille_de_Pub_Apercu.html
-```
-
-## GitHub
-
-Dépôt dédié : `teamfilledepub/filledepub_site`, dans l’organisation de la cliente. Les autres projets restent indépendants. L’utilisateur `Yanaem` dispose des droits d’administration du dépôt.
-
-Toute application utilisée pour modifier ou déployer ce code doit être autorisée séparément sur ce dépôt par l’organisation.
-
-## Cloudflare Workers : déploiement depuis GitHub
-
-Hébergement choisi : **Cloudflare Workers avec Static Assets**. Le fichier `wrangler.jsonc` publie le contenu de `dist/` et cible exclusivement le compte Cloudflare Fille de Pub visible dans les captures. Le site ne nécessite pas de script serveur pour sa version actuelle ; des fonctions serveur pourront être ajoutées ensuite.
-
-Depuis le compte Cloudflare Fille de Pub, ouvrir **Workers & Pages → Create application → Import a repository → Get started**. Connecter GitHub et autoriser l’application Cloudflare sur `teamfilledepub/filledepub_site`.
-
-| Paramètre | Valeur |
-| --- | --- |
-| Nom du Worker | `filledepub-site` (doit correspondre à `wrangler.jsonc`) |
-| Dépôt | `teamfilledepub/filledepub_site` |
-| Branche de production | `main` |
-| Build command | `npm run build` |
-| Deploy command | `npx wrangler deploy` |
-| Root directory | Racine du dépôt, laisser la valeur par défaut |
-| Répertoire des fichiers publiés | `dist/`, déjà configuré dans `wrangler.jsonc` |
-| Variables applicatives ou secrets | Aucun pour cette version |
-
-Cloudflare Workers Builds installe les dépendances et gère l’authentification du déploiement depuis son interface. Aucun jeton Cloudflare ne doit être ajouté au dépôt. Valider avec **Save and Deploy**, puis consulter l’URL `workers.dev` réellement fournie par Cloudflare.
-
-Pour contrôler localement la préparation du déploiement sans publier :
+Node.js 22 ou version ultérieure. Wrangler 4.141.0 est verrouillé dans le fichier de dépendances.
 
 ```sh
 npm ci
+npm run dev
+npm run build
 npm run check:deploy
 ```
 
-Après le premier déploiement, vérifier l’affichage et les interactions sur ordinateur et mobile. Les prochaines évolutions pourront passer par des branches de travail et les prévisualisations Workers avant fusion dans `main`.
+Le serveur local sert `site/` et le build prépare `dist/`. `check:deploy` réalise un déploiement à blanc, sans publier.
 
-Documentation :
-- https://developers.cloudflare.com/workers/static-assets/
-- https://developers.cloudflare.com/workers/ci-cd/builds/
-- https://developers.cloudflare.com/workers/ci-cd/builds/configuration/
+Paramètres Cloudflare Workers Builds :
 
-Le déploiement Cloudflare n’a pas été effectué depuis cette session : la vérification anti-bot du tableau de bord empêche l’accès du navigateur de travail. La connexion Cloudflare ↔ GitHub et le raccordement du domaine restent donc à effectuer depuis le compte de la cliente.
+| Paramètre | Valeur |
+| --- | --- |
+| Worker | `filledepub-site` |
+| Dépôt | `teamfilledepub/filledepub_site` |
+| Branche | `main` |
+| Build command | `npm run build` |
+| Deploy command | `npx wrangler deploy` |
+| Root directory | Racine du dépôt |
+| Static Assets | `dist/` |
+| Secrets applicatifs | Aucun actuellement |
 
-Avant toute bascule DNS, relever et conserver les enregistrements existants, notamment ceux de la messagerie (MX, SPF, DKIM, DMARC). Aucun changement DNS effectué.
+Avant tout changement des serveurs DNS, conserver et vérifier les enregistrements existants, notamment ceux des e-mails : MX, SPF, DKIM et DMARC.
 
-## Vérifications effectuées
+## Vérifications
 
-- Vérification syntaxique JavaScript et génération de `dist/`.
-- Validation de la configuration Workers avec Wrangler 4.141.0 (`wrangler deploy --dry-run`), sans publication.
-- Analyse HTML et CSS ; contrôle des ancres et des ressources locales.
-- Vérification de la présence des préférences de mouvement réduit et des attributs du menu.
-- Contrôle visuel de l’image générée.
+Syntaxe JavaScript, compilation, déploiement à blanc, ancres, fichiers référencés, groupes du bandeau, variantes SEO de revue et de production. Contrôles de logique : défilement dans les deux sens, redimensionnement, accordéons, validation du formulaire, encodage des caractères, date, copie et invalidation d’une demande modifiée.
 
-Le serveur de prévisualisation a démarré, mais le navigateur de cette session n’a pas été autorisé à joindre la prévisualisation. Le contrôle visuel du site complet et les essais interactifs sur ordinateur et mobile restent à effectuer sur l’aperçu HTML ou le premier déploiement Cloudflare. Ne pas les considérer comme validés.
+Les tests de logique en DOM simulé ne remplacent pas une validation physique sur iPhone/Safari.
