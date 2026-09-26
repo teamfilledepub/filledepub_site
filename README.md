@@ -15,6 +15,10 @@ Le logo et « Retour en haut » ciblent le début du document. Le bandeau utilis
 
 L’image d’accueil est servie en WebP avec trois tailles : 640, 960 et 1536 pixels. Le PNG original est conservé dans le dépôt mais exclu du site compilé. L’aperçu de partage est disponible en PNG 1200 × 630, avec son SVG source.
 
+Les logos Fille de Pub noir et blanc et les trois logos clients sont ceux fournis le 26 septembre 2026. Leur conversion WebP est sans perte et vérifiée pixel par pixel. Les logos Fille de Pub sont cadrés dans un SVG qui exclut uniquement leurs marges transparentes ; le dessin et les couleurs des fichiers ne sont pas modifiés. Le logo fourni apparaît dans l’en-tête, le pied de page, le favicon et l’aperçu de partage.
+
+Les corrections du PDF « Corrections site FDP(1).pdf » sont suivies dans `docs/corrections-2026-09-26.md`. La validation des codes de la charte graphique reste ouverte : les fichiers reçus comportent des logos noir et blanc, sans palette officielle. La palette existante reste provisoirement en place.
+
 ## Demande de devis
 
 Le formulaire prépare un e-mail adressé à `allo@filledepub.com`. Les champs sont validés, le visiteur relit son message, puis ouvre sa messagerie pour l’envoyer. Une copie du texte est proposée en complément.
@@ -25,10 +29,11 @@ Le site ne transmet pas automatiquement de demande, n’enregistre pas les champ
 
 Les prestations, l’expérience de plus de dix ans, les références SOS PC MOBILE / Croque & Moi / EKHAYA HOME DECO, la Guadeloupe et l’adresse e-mail proviennent des captures fournies. L’expérience annoncée ne désigne pas l’âge de l’entreprise.
 
-L’image principale est une illustration, signalée comme telle. Aucun témoignage, résultat commercial ou réalisation réelle n’est inventé. Pour compléter la version officielle, il manque :
+L’image principale reste une illustration, décrite ainsi dans son texte alternatif. La légende visible a été supprimée conformément à la correction 3 du PDF. Elle n’est pas présentée comme une réalisation client. Aucun témoignage, résultat chiffré ou réalisation réelle n’est inventé. Pour compléter la version officielle, il manque :
 
 - l’identité légale de l’éditeur : raison sociale ou identité de l’entrepreneure, forme juridique, SIREN/SIRET, adresse du siège, capital si applicable, coordonnées et responsable de publication ;
-- les vrais logos, photos des opérations et éventuels témoignages validés ;
+- les photos des opérations et éventuels témoignages validés ;
+- les références de couleurs de la charte graphique ;
 - la confirmation du raccordement du domaine définitif.
 
 Aucune page de mentions légales incomplète n’est présentée comme définitive. Les DNS et la messagerie existante n’ont pas été modifiés.

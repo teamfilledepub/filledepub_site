@@ -11,11 +11,24 @@
     "html_anchors_and_assets": "passed",
     "scroll_and_accordion_simulation": "passed",
     "quote_validation_and_encoding": "passed",
-    "preview_and_production_seo_builds": "passed"
+    "preview_and_production_seo_builds": "passed",
+    "client_pdf_text_and_assets": "passed",
+    "logo_pixel_integrity": "passed",
+    "css_syntax": "passed"
   },
   "physical_iphone_safari": "not_tested",
   "automatic_email_sending": "not_configured; client prepares an email for the visitor to send",
   "custom_domain": "pending_connection_confirmation",
   "legal_notice": "pending_verified_publisher_details",
-  "actual_campaign_photos_and_client_logos": "pending_client_assets"
+  "actual_campaign_photos": "pending_client_assets",
+  "client_and_agency_logos": "supplied_and_integrated",
+  "brand_palette": "pending_official_color_codes",
+  "client_pdf_corrections": {
+    "applied": 22,
+    "pending": [
+      2
+    ],
+    "source": "Corrections site FDP(1).pdf",
+    "tracking": "docs/corrections-2026-09-26.md"
+  }
 }

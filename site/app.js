@@ -14,7 +14,7 @@
   nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); } });
   document.addEventListener('click', e => { if (!e.target.closest('.site-header')) setMenu(false); });
-  window.matchMedia('(max-width: 540px)').addEventListener('change', () => setMenu(false));
+  window.matchMedia('(max-width: 680px)').addEventListener('change', () => setMenu(false));
   let userPaused = false;
   const setMotion = () => {
     const paused = userPaused || reduceMotion.matches;
