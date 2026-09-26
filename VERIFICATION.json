@@ -2,14 +2,16 @@
   "version": "0.1",
   "source": "Captures utilisateur du 26/09/2026",
   "repository_target": "teamfilledepub/filledepub_site",
-  "remote_write_status": "Accès en écriture confirmé le 26/09/2026 ; README créé sur main",
-  "cloudflare_status": "aucune modification; vérification anti-bot",
+  "remote_write_status": "Site complet synchronisé sur GitHub ; accès en écriture confirmé",
+  "cloudflare_status": "Configuration prête pour Workers Builds ; aucun déploiement effectué",
   "checks": {
     "js_syntax": "passed",
     "build": "passed",
     "html_anchors_assets": "passed",
     "css_delimiters": "passed",
     "standalone_preview": "passed",
-    "browser_visual_and_interaction": "not_completed_environment_blocked"
-  }
+    "browser_visual_and_interaction": "not_completed_environment_blocked",
+    "workers_deploy_dry_run": "passed (Wrangler 4.141.0)"
+  },
+  "hosting_target": "Cloudflare Workers Static Assets"
 }
