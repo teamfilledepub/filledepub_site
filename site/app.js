@@ -34,8 +34,46 @@
     reveals.forEach(el => observer.observe(el));
   } else reveals.forEach(el => el.classList.add('is-visible'));
   const details = document.querySelectorAll('.service-item');
+  const scrollHighlight = window.matchMedia('(max-width: 800px), (hover: none), (pointer: coarse)');
+  const header = document.querySelector('.site-header');
+  const serviceSummaries = Array.from(details, item => ({ item, summary: item.querySelector('summary') }));
+  let activeService = null;
+  let serviceFrame = 0;
+  const updateServiceHighlight = () => {
+    serviceFrame = 0;
+    let nextService = null;
+    if (scrollHighlight.matches) {
+      const visibleTop = Math.max(0, header.getBoundingClientRect().bottom);
+      const visibleBottom = window.innerHeight;
+      const readingLine = visibleTop + (visibleBottom - visibleTop) / 2;
+      let nearestDistance = Infinity;
+      serviceSummaries.forEach(({ item, summary }) => {
+        const rect = summary.getBoundingClientRect();
+        if (rect.bottom <= visibleTop || rect.top >= visibleBottom) return;
+        const distance = Math.abs(rect.top + rect.height / 2 - readingLine);
+        if (distance < nearestDistance) {
+          nearestDistance = distance;
+          nextService = item;
+        }
+      });
+    }
+    if (nextService === activeService) return;
+    activeService?.classList.remove('is-scroll-active');
+    nextService?.classList.add('is-scroll-active');
+    activeService = nextService;
+  };
+  const scheduleServiceHighlight = () => {
+    if (!serviceFrame) serviceFrame = requestAnimationFrame(updateServiceHighlight);
+  };
+  // Touch screens have no hover: follow the title nearest the reading line.
+  window.addEventListener('scroll', scheduleServiceHighlight, { passive: true });
+  window.addEventListener('resize', scheduleServiceHighlight);
+  scrollHighlight.addEventListener('change', scheduleServiceHighlight);
+  window.addEventListener('pageshow', scheduleServiceHighlight);
+  scheduleServiceHighlight();
   details.forEach(item => item.addEventListener('toggle', () => {
     if (item.open) details.forEach(other => { if (other !== item && other.open) other.open = false; });
+    scheduleServiceHighlight();
   }));
   let copyTimer;
   copy.addEventListener('click', async () => {
