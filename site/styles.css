@@ -152,7 +152,9 @@ h1,h2,h3,h4 { font-family: var(--font-heading, Arial, Helvetica, sans-serif); }
 .motion-paused .typewriter-cursor { display: none; }
 .typewriter-shell .motion-toggle { top: 50%; transform: translateY(-50%); }
 @keyframes cursor-blink { 50% { opacity: 0; } }
-.footer-privacy { font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.footer-links { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; }
+.footer-privacy, .footer-admin { font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.footer-admin:hover { color: var(--yellow); }
 .form-feedback { font-size: 15px; line-height: 1.55; margin-top: 18px; }
 .form-feedback:empty { display: none; }
 .form-feedback.is-error { color: #a11627; }
@@ -209,10 +211,10 @@ button:disabled { cursor: wait; opacity: .65; }
  .recruit-hero{padding:45px 0 65px}.recruit-hero h1{font-size:clamp(38px,7vw,56px)}.recruit-visual{margin:15px 12px 0 0}.recruit-visual img{height:360px}
  .recruit-details h2,.candidate-grid h2{font-size:38px}.candidate-section{padding:55px 0}.candidate-grid > div:first-child > p{max-width:600px}
  .trust-label{display:table;margin:0 auto 28px}.typewriter-shell{padding:20px 70px 20px 20px;min-height:104px}.typewriter-stage{text-align:left}
- .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-inner{flex-wrap:wrap}.footer-privacy{margin-left:auto}
+ .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.footer-inner{flex-wrap:wrap}.footer-links{margin-left:auto}
 }
 @media(max-width: 540px) {
  .recruit-hero h1{font-size:clamp(32px,9vw,46px)}.recruit-lead{font-size:16px}.recruit-visual img{height:290px}.recruit-badge{font-size:15px;padding:22px}
  .recruit-details h2,.candidate-grid h2{font-size:32px}.recruit-points article{padding-left:50px}.recruit-points h3{font-size:23px}.gallery-grid{grid-template-columns:1fr}
- .client-list{grid-template-columns:repeat(3,minmax(0,1fr))}.client-croque{grid-column:auto}.footer-privacy{order:4;margin:0 auto}.typewriter-stage{font-size:18px}
+ .client-list{grid-template-columns:repeat(3,minmax(0,1fr))}.client-croque{grid-column:auto}.footer-links{order:4;flex-basis:100%;justify-content:center;margin:0 auto}.typewriter-stage{font-size:18px}
 }
