@@ -56,8 +56,8 @@
     "tracking": "docs/corrections-volume-2.md"
   },
   "deployment": {
-    "verified_commit": "f1bf26166072901b5e5f78012229803b60d05697",
-    "cloudflare_build": "3963023b-f457-408b-b26f-abc14af7071c",
+    "verified_commit": "c4665d10ad8575041e76ca0594d96666b8ba020d",
+    "cloudflare_build": "c1054e49-4eed-4405-9ea5-bcf5afab1987",
     "conclusion": "success"
   },
   "volume_3": {
@@ -77,6 +77,7 @@
     "deploy_dry_run": "passed",
     "tests_passed": 12,
     "logo_source_identity": "verified",
-    "iphone_date_field": "CSS correction applied; physical iPhone/Safari verification pending"
+    "iphone_date_field": "CSS correction applied; physical iPhone/Safari verification pending",
+    "live_review": "Published images and requested copy verified; Indépendant selection works; desktop date input and label widths both 294.95px, appearance none. Physical iPhone/Safari remains pending."
   }
 }

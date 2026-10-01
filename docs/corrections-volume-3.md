@@ -27,7 +27,8 @@ Les nouvelles formulations demandées utilisent de nouvelles clés de contenu po
 - Tests : 12 réussis, dont validation et persistance des contacts, confidentialité, authentification, export CSV et compatibilité de la configuration précédente.
 - Syntaxe JavaScript et cohérence des champs de contenu : vérifiées.
 - Composition du logo : contrôlée visuellement et par identité de la ressource intégrée avec le logo fourni.
-- Le contrôle final du site publié est distinct de ces vérifications locales.
+- Contrôle du site publié : illustrations chargées, textes conformes, choix « Indépendant » sélectionnable. Le champ date et sa colonne mesurent chacun 294,95 pixels dans le navigateur de contrôle.
+- Le cartouche de l’accueil est placé plus bas pour dégager le logo ; le grand titre du recrutement utilise une taille adaptée au nouveau libellé sur ordinateur.
 - Un contrôle physique sur iPhone/Safari reste nécessaire pour confirmer le champ date sur l’appareil concerné. Aucune candidature fictive n’est envoyée en production.
 
 Références techniques consultées : [MDN, mise en forme avancée des formulaires](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Advanced_form_styling) et [WebKit, champ date vide et hauteur interne](https://bugs.webkit.org/show_bug.cgi?id=198959).

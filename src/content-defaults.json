@@ -697,7 +697,7 @@
       "key": "recruit.recruit-hero.intro.v3",
       "label": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Venez faire é",
       "group": "Recrutement · recruit-hero",
-      "defaultValue": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Venez faire équipe avec Fille de Pub.",
+      "defaultValue": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Venez faire équipe avec Fille de Pub.",
       "maxLength": 1200
     },
     {
@@ -935,7 +935,7 @@
       "recruit.candidature.07": "Votre profil",
       "recruit.candidature.08": "Les champs marqués * sont obligatoires.",
       "recruit.recruit-hero.headline.v3": "DE LA PERSONNALITÉ.",
-      "recruit.recruit-hero.intro.v3": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Venez faire équipe avec Fille de Pub.",
+      "recruit.recruit-hero.intro.v3": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Venez faire équipe avec Fille de Pub.",
       "recruit.section-wrap.profiles.v3": "Animateur ou animatrice indépendant·e, étudiant·e ou disponible pour des missions ponctuelles : présentez-nous votre profil.",
       "recruit.candidature.question.v3": "ET SI C’ÉTAIT VOUS,",
       "recruit.candidature.terrain.v3": "SUR LE TERRAIN ?"
