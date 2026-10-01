@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Rejoindre l’équipe — Fille de Pub</title>
+<meta content="Rejoignez le réseau d’animateurs et d’animatrices de Fille de Pub en Guadeloupe. Présentez votre profil pour des missions ponctuelles." name="description"/>
+<meta content="#ffce00" name="theme-color"/>
+<meta content="noindex, follow" name="robots"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/styles.css" rel="stylesheet"/>
+<link href="/theme.css" rel="stylesheet"/>
+<script defer="" src="/app.js"></script>
+<script defer="" src="/forms.js"></script>
+</head>
+<body class="recruit-page" id="accueil">
+<a class="skip-link" href="#contenu"><span data-copy="recruit.navigation.01">Aller au contenu</span></a>
+<header class="site-header">
+<div class="nav-wrap">
+<a aria-label="Fille de Pub, accueil" class="wordmark" href="/#accueil"><img alt="" data-image="logoDark" height="709" src="/assets/logo-fille-de-pub-noir.svg" width="2094"/></a>
+<button aria-controls="navigation" aria-expanded="false" class="menu-toggle" hidden="" type="button"><span>Menu</span><span aria-hidden="true" class="menu-icon"><i></i><i></i></span></button>
+<nav aria-label="Navigation principale" id="navigation">
+<a href="/#agence"><span data-copy="nav.agency">L’agence</span></a><a href="/#prestations"><span data-copy="nav.services">Nos prestations</span></a><a aria-current="page" href="/recrutement/"><span data-copy="nav.recruit">Rejoindre l’équipe</span></a><a class="nav-contact" href="/#contact"><span data-copy="nav.contact">On en parle ?</span><span aria-hidden="true">↗</span></a>
+</nav>
+</div>
+</header>
+<main id="contenu">
+<section class="recruit-hero">
+<div class="section-wrap recruit-intro-grid">
+<div><p class="eyebrow"><span data-copy="recruit.recruit-hero.01">REJOINDRE L’ÉQUIPE</span></p><h1><span data-copy="recruit.recruit-hero.02">DU TALENT.</span><br/><span data-copy="recruit.recruit-hero.03">DE L’ÉNERGIE.</span><br/><span class="underline-ink"><span data-copy="recruit.recruit-hero.04">VOUS, SUR LE TERRAIN.</span></span></h1><p class="recruit-lead"><span data-copy="recruit.recruit-hero.05">Vous aimez le contact, les rencontres et les expériences qui marquent ? Faites connaissance avec Fille de Pub.</span></p><a class="button button-dark" href="#candidature"><span data-copy="recruit.recruit-hero.06">Présenter mon profil</span><span aria-hidden="true">↗</span></a></div>
+<div class="recruit-visual"><img alt="Illustration d’une animatrice accueillant des visiteurs sur un stand." data-image="hero" height="1024" src="/assets/activation-960.webp" width="1536"/><span aria-hidden="true" class="recruit-badge">À VOUS<br/>DE JOUER ! ✳</span></div>
+</div>
+</section>
+<section aria-labelledby="recruit-for-title" class="section-wrap section-space recruit-details">
+<div><p class="section-number"><span data-copy="recruit.section-wrap.01">DES MISSIONS, DES RENCONTRES</span></p><h2 id="recruit-for-title"><span data-copy="recruit.section-wrap.02">VOTRE ÉNERGIE</span><br/><span class="underline-yellow"><span data-copy="recruit.section-wrap.03">FAIT LA DIFFÉRENCE.</span></span></h2><p><span data-copy="recruit.section-wrap.04">Animateur ou animatrice indépendant·e, freelance, étudiant·e ou disponible pour des missions ponctuelles : présentez-nous votre profil.</span></p></div>
+<div class="recruit-points"><article><span aria-hidden="true">↗</span><h3><span data-copy="recruit.section-wrap.05">Créer le contact.</span></h3><p><span data-copy="recruit.section-wrap.06">Accueillir le public, faire découvrir une marque et donner envie de participer.</span></p></article><article><span aria-hidden="true">✳</span><h3><span data-copy="recruit.section-wrap.07">Faire vivre l’expérience.</span></h3><p><span data-copy="recruit.section-wrap.08">Apporter votre enthousiasme et votre sérieux à chaque animation.</span></p></article><article><span aria-hidden="true">↔</span><h3><span data-copy="recruit.section-wrap.09">Selon vos disponibilités.</span></h3><p><span data-copy="recruit.section-wrap.10">Indiquez vos zones de déplacement et vos créneaux pour nous aider à vous proposer des missions adaptées.</span></p></article></div>
+</section>
+<section aria-labelledby="candidate-title" class="candidate-section" id="candidature">
+<div class="section-wrap candidate-grid">
+<div><p class="section-number"><span data-copy="recruit.candidature.01">FAISONS CONNAISSANCE</span></p><h2 id="candidate-title"><span data-copy="recruit.candidature.02">LE PROCHAIN</span><br/><span data-copy="recruit.candidature.03">TALENT,</span> <span class="underline-yellow"><span data-copy="recruit.candidature.04">C’EST VOUS ?</span></span></h2><p><span data-copy="recruit.candidature.05">Quelques informations pour rejoindre notre base de profils et être contacté·e lorsqu’une mission peut vous correspondre.</span></p><p class="candidate-note"><span data-copy="recruit.candidature.06">Votre inscription ne constitue pas une promesse de mission. Aucun CV n’est nécessaire pour ce premier contact.</span></p></div>
+<div class="quote-panel"><h3><span data-copy="recruit.candidature.07">Votre profil</span></h3><p class="quote-intro"><span data-copy="recruit.candidature.08">Les champs marqués * sont obligatoires.</span></p>
+<form action="/api/contacts" data-contact-form="candidature" method="post">
+<div class="quote-fields">
+<label class="field-wide"><span>Votre nom et prénom *</span><input autocomplete="name" maxlength="100" name="name" required=""/></label>
+<label><span>Votre e-mail *</span><input autocomplete="email" maxlength="160" name="email" required="" type="email"/></label>
+<label><span>Votre téléphone *</span><input autocomplete="tel" maxlength="30" name="phone" required="" type="tel"/></label>
+<label><span>Votre ville *</span><input autocomplete="address-level2" maxlength="100" name="city" required=""/></label>
+<label><span>Votre profil *</span><select name="profile" required=""><option value="">Choisir un profil</option>Animateur / animatrice indépendant·e<option>Freelance</option><option>Étudiant·e</option><option>Missions ponctuelles</option><option>Autre profil</option></select></label>
+<label class="field-wide"><span>Vos disponibilités *</span><textarea maxlength="800" name="availability" placeholder="En semaine, le week-end, pendant les vacances…" required="" rows="2"></textarea></label>
+<label class="field-wide"><span>Vos zones de déplacement</span><input maxlength="200" name="mobility" placeholder="Communes ou secteurs dans lesquels vous pouvez intervenir"/></label>
+<label class="field-wide"><span>Parlez-nous de vous</span><textarea maxlength="2000" name="experience" placeholder="Votre expérience, vos qualités, ce qui vous donne envie de nous rejoindre…" rows="4"></textarea></label>
+</div>
+<label aria-hidden="true" class="honey-field">Votre site internet<input autocomplete="off" name="website" tabindex="-1"/></label>
+<label class="consent-field"><input name="consent" required="" type="checkbox"/><span>J’accepte que Fille de Pub conserve mon profil pendant 12 mois pour me contacter au sujet de missions. Je peux demander sa suppression à tout moment. <a href="/confidentialite/">En savoir plus</a>.</span></label>
+<button class="button button-dark quote-submit" disabled="" type="submit">Envoyer ma candidature <span aria-hidden="true">↗</span></button>
+<p aria-live="polite" class="form-feedback" role="status" tabindex="-1"></p>
+<noscript><p>Pour présenter votre profil, écrivez à <a data-contact-email="true" href="mailto:allo@filledepub.com"><span data-email-text="true">allo@filledepub.com</span></a>.</p></noscript>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="section-wrap footer-inner"><a aria-label="Fille de Pub, retour à l’accueil" class="wordmark" href="/#accueil"><img alt="" data-image="logoLight" decoding="async" height="709" loading="lazy" src="/assets/logo-fille-de-pub-blanc.svg" width="2094"/></a><p><span data-copy="footer.tagline">Vos animations prennent vie !</span></p><a class="footer-privacy" href="/confidentialite/"><span data-copy="footer.privacy">Confidentialité</span></a><a class="top-link" href="/#accueil"><span data-copy="footer.top">Retour en haut</span><span aria-hidden="true">↑</span></a></div></footer>
+</body></html>

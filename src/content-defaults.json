@@ -1,0 +1,1012 @@
+{
+  "fields": [
+    {
+      "key": "home.navigation.01",
+      "label": "Aller au contenu",
+      "group": "Accueil · navigation",
+      "defaultValue": "Aller au contenu",
+      "maxLength": 1200
+    },
+    {
+      "key": "nav.agency",
+      "label": "L’agence",
+      "group": "Navigation et pied de page",
+      "defaultValue": "L’agence",
+      "maxLength": 1200
+    },
+    {
+      "key": "nav.services",
+      "label": "Nos prestations",
+      "group": "Navigation et pied de page",
+      "defaultValue": "Nos prestations",
+      "maxLength": 1200
+    },
+    {
+      "key": "nav.recruit",
+      "label": "Rejoindre l’équipe",
+      "group": "Navigation et pied de page",
+      "defaultValue": "Rejoindre l’équipe",
+      "maxLength": 1200
+    },
+    {
+      "key": "nav.contact",
+      "label": "On en parle ?",
+      "group": "Navigation et pied de page",
+      "defaultValue": "On en parle ?",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.01",
+      "label": "Agence d’animations commerciales · Guadeloupe",
+      "group": "Accueil · hero",
+      "defaultValue": "Agence d’animations commerciales · Guadeloupe",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.02",
+      "label": "VOS ANIMATIONS",
+      "group": "Accueil · hero",
+      "defaultValue": "VOS ANIMATIONS",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.03",
+      "label": "PRENNENT VIE !",
+      "group": "Accueil · hero",
+      "defaultValue": "PRENNENT VIE !",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.04",
+      "label": "On conçoit, produit et anime vos opérations commerciales.",
+      "group": "Accueil · hero",
+      "defaultValue": "On conçoit, produit et anime vos opérations commerciales.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.05",
+      "label": "Demander un devis",
+      "group": "Accueil · hero",
+      "defaultValue": "Demander un devis",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.06",
+      "label": "Découvrir nos prestations",
+      "group": "Accueil · hero",
+      "defaultValue": "Découvrir nos prestations",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.07",
+      "label": "ON PASSE",
+      "group": "Accueil · hero",
+      "defaultValue": "ON PASSE",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.08",
+      "label": "À L’ACTION !",
+      "group": "Accueil · hero",
+      "defaultValue": "À L’ACTION !",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.09",
+      "label": "Créativité dans les idées.",
+      "group": "Accueil · hero",
+      "defaultValue": "Créativité dans les idées.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.hero.10",
+      "label": "Énergie sur le terrain.",
+      "group": "Accueil · hero",
+      "defaultValue": "Énergie sur le terrain.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.bandeau.01",
+      "label": "Une animation n’est pas un stand. C’est une rencontre. Une expérience. Une émotion. U",
+      "group": "Accueil · bandeau",
+      "defaultValue": "Une animation n’est pas un stand. C’est une rencontre. Une expérience. Une émotion. Un souvenir. Un déclencheur de ventes.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.trust.01",
+      "label": "Ils nous font confiance",
+      "group": "Accueil · trust",
+      "defaultValue": "Ils nous font confiance",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.01",
+      "label": "01 / L’AGENCE",
+      "group": "Accueil · agence",
+      "defaultValue": "01 / L’AGENCE",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.02",
+      "label": "LES BONNES IDÉES",
+      "group": "Accueil · agence",
+      "defaultValue": "LES BONNES IDÉES",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.03",
+      "label": "SE VIVENT",
+      "group": "Accueil · agence",
+      "defaultValue": "SE VIVENT",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.04",
+      "label": "EN VRAI.",
+      "group": "Accueil · agence",
+      "defaultValue": "EN VRAI.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.05",
+      "label": "Une marque prend une autre dimension quand elle rencontre son public.",
+      "group": "Accueil · agence",
+      "defaultValue": "Une marque prend une autre dimension quand elle rencontre son public.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.06",
+      "label": "Après plus de dix ans à imaginer des campagnes et accompagner des marques, une convic",
+      "group": "Accueil · agence",
+      "defaultValue": "Après plus de dix ans à imaginer des campagnes et accompagner des marques, une conviction s’est imposée : les meilleures idées prennent vie sur le terrain.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.07",
+      "label": "C’est de cette conviction qu’est née",
+      "group": "Accueil · agence",
+      "defaultValue": "C’est de cette conviction qu’est née",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.08",
+      "label": "Fille de Pub",
+      "group": "Accueil · agence",
+      "defaultValue": "Fille de Pub",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.09",
+      "label": ", une agence entièrement dédiée à l’activation commerciale.",
+      "group": "Accueil · agence",
+      "defaultValue": ", une agence entièrement dédiée à l’activation commerciale.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.agence.10",
+      "label": "Voici comment on s’y prend",
+      "group": "Accueil · agence",
+      "defaultValue": "Voici comment on s’y prend",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.01",
+      "label": "02 / NOS PRESTATIONS",
+      "group": "Accueil · prestations",
+      "defaultValue": "02 / NOS PRESTATIONS",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.02",
+      "label": "VOUS AVEZ UN PRODUIT.",
+      "group": "Accueil · prestations",
+      "defaultValue": "VOUS AVEZ UN PRODUIT.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.03",
+      "label": "ON CRÉE",
+      "group": "Accueil · prestations",
+      "defaultValue": "ON CRÉE",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.04",
+      "label": "L’EXPÉRIENCE.",
+      "group": "Accueil · prestations",
+      "defaultValue": "L’EXPÉRIENCE.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.05",
+      "label": "On s’occupe de tout !",
+      "group": "Accueil · prestations",
+      "defaultValue": "On s’occupe de tout !",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.06",
+      "label": "De l’idée à la réalisation, jusqu’au bilan.",
+      "group": "Accueil · prestations",
+      "defaultValue": "De l’idée à la réalisation, jusqu’au bilan.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.07",
+      "label": "On imagine.",
+      "group": "Accueil · prestations",
+      "defaultValue": "On imagine.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.08",
+      "label": "La bonne idée, pour votre marque.",
+      "group": "Accueil · prestations",
+      "defaultValue": "La bonne idée, pour votre marque.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.09",
+      "label": "Nous créons une animation sur mesure, pensée pour vos objectifs commerciaux et pour o",
+      "group": "Accueil · prestations",
+      "defaultValue": "Nous créons une animation sur mesure, pensée pour vos objectifs commerciaux et pour offrir à votre cible une expérience qui marque.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.10",
+      "label": "Concept créatif",
+      "group": "Accueil · prestations",
+      "defaultValue": "Concept créatif",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.11",
+      "label": "Mécanique commerciale",
+      "group": "Accueil · prestations",
+      "defaultValue": "Mécanique commerciale",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.12",
+      "label": "Scénographie",
+      "group": "Accueil · prestations",
+      "defaultValue": "Scénographie",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.13",
+      "label": "Expérience client",
+      "group": "Accueil · prestations",
+      "defaultValue": "Expérience client",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.14",
+      "label": "On produit.",
+      "group": "Accueil · prestations",
+      "defaultValue": "On produit.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.15",
+      "label": "Des idées qui prennent forme.",
+      "group": "Accueil · prestations",
+      "defaultValue": "Des idées qui prennent forme.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.16",
+      "label": "Nous donnons forme au dispositif : des décors à l’habillage, chaque élément met votre",
+      "group": "Accueil · prestations",
+      "defaultValue": "Nous donnons forme au dispositif : des décors à l’habillage, chaque élément met votre marque en scène.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.17",
+      "label": "Décors",
+      "group": "Accueil · prestations",
+      "defaultValue": "Décors",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.18",
+      "label": "Habillage",
+      "group": "Accueil · prestations",
+      "defaultValue": "Habillage",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.19",
+      "label": "Publicité sur le lieu de vente",
+      "group": "Accueil · prestations",
+      "defaultValue": "Publicité sur le lieu de vente",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.20",
+      "label": "On installe.",
+      "group": "Accueil · prestations",
+      "defaultValue": "On installe.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.21",
+      "label": "Tout est prêt pour le jour J.",
+      "group": "Accueil · prestations",
+      "defaultValue": "Tout est prêt pour le jour J.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.22",
+      "label": "Nous organisons la logistique et l’installation de votre dispositif, puis son démonta",
+      "group": "Accueil · prestations",
+      "defaultValue": "Nous organisons la logistique et l’installation de votre dispositif, puis son démontage à la fin de l’opération.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.23",
+      "label": "Logistique",
+      "group": "Accueil · prestations",
+      "defaultValue": "Logistique",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.24",
+      "label": "Montage",
+      "group": "Accueil · prestations",
+      "defaultValue": "Montage",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.25",
+      "label": "Démontage",
+      "group": "Accueil · prestations",
+      "defaultValue": "Démontage",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.26",
+      "label": "On anime.",
+      "group": "Accueil · prestations",
+      "defaultValue": "On anime.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.27",
+      "label": "L’énergie qui crée la rencontre.",
+      "group": "Accueil · prestations",
+      "defaultValue": "L’énergie qui crée la rencontre.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.28",
+      "label": "Hôtesses, animateurs et influenceurs donnent vie à votre opération et créent le conta",
+      "group": "Accueil · prestations",
+      "defaultValue": "Hôtesses, animateurs et influenceurs donnent vie à votre opération et créent le contact avec votre public.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.29",
+      "label": "Hôtesses",
+      "group": "Accueil · prestations",
+      "defaultValue": "Hôtesses",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.30",
+      "label": "Animateurs",
+      "group": "Accueil · prestations",
+      "defaultValue": "Animateurs",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.31",
+      "label": "Influenceurs",
+      "group": "Accueil · prestations",
+      "defaultValue": "Influenceurs",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.32",
+      "label": "On coordonne.",
+      "group": "Accueil · prestations",
+      "defaultValue": "On coordonne.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.33",
+      "label": "Un seul interlocuteur pour tout orchestrer.",
+      "group": "Accueil · prestations",
+      "defaultValue": "Un seul interlocuteur pour tout orchestrer.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.34",
+      "label": "Nous pilotons l’ensemble du projet et réalisons un bilan après chaque activation afin",
+      "group": "Accueil · prestations",
+      "defaultValue": "Nous pilotons l’ensemble du projet et réalisons un bilan après chaque activation afin d’en mesurer les performances.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.35",
+      "label": "Coordination",
+      "group": "Accueil · prestations",
+      "defaultValue": "Coordination",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.36",
+      "label": "Gestion de projet",
+      "group": "Accueil · prestations",
+      "defaultValue": "Gestion de projet",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.37",
+      "label": "Bilan & reporting",
+      "group": "Accueil · prestations",
+      "defaultValue": "Bilan & reporting",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.prestations.38",
+      "label": "Parlons de votre animation",
+      "group": "Accueil · prestations",
+      "defaultValue": "Parlons de votre animation",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.01",
+      "label": "03 / NOTRE FAÇON DE FAIRE",
+      "group": "Accueil · promises",
+      "defaultValue": "03 / NOTRE FAÇON DE FAIRE",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.02",
+      "label": "DU FUN DANS L’ANIMATION.",
+      "group": "Accueil · promises",
+      "defaultValue": "DU FUN DANS L’ANIMATION.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.03",
+      "label": "DU SÉRIEUX",
+      "group": "Accueil · promises",
+      "defaultValue": "DU SÉRIEUX",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.04",
+      "label": "DANS L’EXÉCUTION.",
+      "group": "Accueil · promises",
+      "defaultValue": "DANS L’EXÉCUTION.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.05",
+      "label": "Clés en main.",
+      "group": "Accueil · promises",
+      "defaultValue": "Clés en main.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.06",
+      "label": "On s’occupe de tout.",
+      "group": "Accueil · promises",
+      "defaultValue": "On s’occupe de tout.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.07",
+      "label": "De l’idée à la réalisation,",
+      "group": "Accueil · promises",
+      "defaultValue": "De l’idée à la réalisation,",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.08",
+      "label": "jusqu’au bilan.",
+      "group": "Accueil · promises",
+      "defaultValue": "jusqu’au bilan.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.09",
+      "label": "Pas comme",
+      "group": "Accueil · promises",
+      "defaultValue": "Pas comme",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.10",
+      "label": "les autres.",
+      "group": "Accueil · promises",
+      "defaultValue": "les autres.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.11",
+      "label": "Un œil créatif pour faire de votre animation un véritable outil marketing.",
+      "group": "Accueil · promises",
+      "defaultValue": "Un œil créatif pour faire de votre animation un véritable outil marketing.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.12",
+      "label": "À votre",
+      "group": "Accueil · promises",
+      "defaultValue": "À votre",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.13",
+      "label": "image.",
+      "group": "Accueil · promises",
+      "defaultValue": "image.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.14",
+      "label": "Un dispositif sur mesure, adapté à votre marque et à vos objectifs.",
+      "group": "Accueil · promises",
+      "defaultValue": "Un dispositif sur mesure, adapté à votre marque et à vos objectifs.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.15",
+      "label": "Mesurable.",
+      "group": "Accueil · promises",
+      "defaultValue": "Mesurable.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.promises.16",
+      "label": "Des performances mesurées après chaque activation pour faire le point.",
+      "group": "Accueil · promises",
+      "defaultValue": "Des performances mesurées après chaque activation pour faire le point.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.01",
+      "label": "04 / ON EN PARLE ?",
+      "group": "Accueil · contact",
+      "defaultValue": "04 / ON EN PARLE ?",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.02",
+      "label": "ET SI VOTRE PROCHAINE",
+      "group": "Accueil · contact",
+      "defaultValue": "ET SI VOTRE PROCHAINE",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.03",
+      "label": "CAMPAGNE",
+      "group": "Accueil · contact",
+      "defaultValue": "CAMPAGNE",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.04",
+      "label": "ÉTAIT À VIVRE ?",
+      "group": "Accueil · contact",
+      "defaultValue": "ÉTAIT À VIVRE ?",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.05",
+      "label": "Racontez-nous votre projet.",
+      "group": "Accueil · contact",
+      "defaultValue": "Racontez-nous votre projet.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.06",
+      "label": "Quelques mots suffisent pour commencer.",
+      "group": "Accueil · contact",
+      "defaultValue": "Quelques mots suffisent pour commencer.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.08",
+      "label": "Agence basée en Guadeloupe",
+      "group": "Accueil · contact",
+      "defaultValue": "Agence basée en Guadeloupe",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.09",
+      "label": "Copier l’adresse",
+      "group": "Accueil · contact",
+      "defaultValue": "Copier l’adresse",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.10",
+      "label": "Votre projet commence ici.",
+      "group": "Accueil · contact",
+      "defaultValue": "Votre projet commence ici.",
+      "maxLength": 1200
+    },
+    {
+      "key": "home.contact.11",
+      "label": "Décrivez-nous votre projet. Les champs marqués * sont obligatoires.",
+      "group": "Accueil · contact",
+      "defaultValue": "Décrivez-nous votre projet. Les champs marqués * sont obligatoires.",
+      "maxLength": 1200
+    },
+    {
+      "key": "footer.tagline",
+      "label": "Vos animations prennent vie !",
+      "group": "Navigation et pied de page",
+      "defaultValue": "Vos animations prennent vie !",
+      "maxLength": 1200
+    },
+    {
+      "key": "footer.privacy",
+      "label": "Confidentialité",
+      "group": "Navigation et pied de page",
+      "defaultValue": "Confidentialité",
+      "maxLength": 1200
+    },
+    {
+      "key": "footer.top",
+      "label": "Retour en haut",
+      "group": "Navigation et pied de page",
+      "defaultValue": "Retour en haut",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.navigation.01",
+      "label": "Aller au contenu",
+      "group": "Recrutement · navigation",
+      "defaultValue": "Aller au contenu",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.recruit-hero.01",
+      "label": "REJOINDRE L’ÉQUIPE",
+      "group": "Recrutement · recruit-hero",
+      "defaultValue": "REJOINDRE L’ÉQUIPE",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.recruit-hero.02",
+      "label": "DU TALENT.",
+      "group": "Recrutement · recruit-hero",
+      "defaultValue": "DU TALENT.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.recruit-hero.03",
+      "label": "DE L’ÉNERGIE.",
+      "group": "Recrutement · recruit-hero",
+      "defaultValue": "DE L’ÉNERGIE.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.recruit-hero.04",
+      "label": "VOUS, SUR LE TERRAIN.",
+      "group": "Recrutement · recruit-hero",
+      "defaultValue": "VOUS, SUR LE TERRAIN.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.recruit-hero.05",
+      "label": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Faites connai",
+      "group": "Recrutement · recruit-hero",
+      "defaultValue": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Faites connaissance avec Fille de Pub.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.recruit-hero.06",
+      "label": "Présenter mon profil",
+      "group": "Recrutement · recruit-hero",
+      "defaultValue": "Présenter mon profil",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.01",
+      "label": "DES MISSIONS, DES RENCONTRES",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "DES MISSIONS, DES RENCONTRES",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.02",
+      "label": "VOTRE ÉNERGIE",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "VOTRE ÉNERGIE",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.03",
+      "label": "FAIT LA DIFFÉRENCE.",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "FAIT LA DIFFÉRENCE.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.04",
+      "label": "Animateur ou animatrice indépendant·e, freelance, étudiant·e ou disponible pour des m",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Animateur ou animatrice indépendant·e, freelance, étudiant·e ou disponible pour des missions ponctuelles : présentez-nous votre profil.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.05",
+      "label": "Créer le contact.",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Créer le contact.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.06",
+      "label": "Accueillir le public, faire découvrir une marque et donner envie de participer.",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Accueillir le public, faire découvrir une marque et donner envie de participer.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.07",
+      "label": "Faire vivre l’expérience.",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Faire vivre l’expérience.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.08",
+      "label": "Apporter votre enthousiasme et votre sérieux à chaque animation.",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Apporter votre enthousiasme et votre sérieux à chaque animation.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.09",
+      "label": "Selon vos disponibilités.",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Selon vos disponibilités.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.section-wrap.10",
+      "label": "Indiquez vos zones de déplacement et vos créneaux pour nous aider à vous proposer des",
+      "group": "Recrutement · section-wrap",
+      "defaultValue": "Indiquez vos zones de déplacement et vos créneaux pour nous aider à vous proposer des missions adaptées.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.01",
+      "label": "FAISONS CONNAISSANCE",
+      "group": "Recrutement · candidature",
+      "defaultValue": "FAISONS CONNAISSANCE",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.02",
+      "label": "LE PROCHAIN",
+      "group": "Recrutement · candidature",
+      "defaultValue": "LE PROCHAIN",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.03",
+      "label": "TALENT,",
+      "group": "Recrutement · candidature",
+      "defaultValue": "TALENT,",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.04",
+      "label": "C’EST VOUS ?",
+      "group": "Recrutement · candidature",
+      "defaultValue": "C’EST VOUS ?",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.05",
+      "label": "Quelques informations pour rejoindre notre base de profils et être contacté·e lorsqu’",
+      "group": "Recrutement · candidature",
+      "defaultValue": "Quelques informations pour rejoindre notre base de profils et être contacté·e lorsqu’une mission peut vous correspondre.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.06",
+      "label": "Votre inscription ne constitue pas une promesse de mission. Aucun CV n’est nécessaire",
+      "group": "Recrutement · candidature",
+      "defaultValue": "Votre inscription ne constitue pas une promesse de mission. Aucun CV n’est nécessaire pour ce premier contact.",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.07",
+      "label": "Votre profil",
+      "group": "Recrutement · candidature",
+      "defaultValue": "Votre profil",
+      "maxLength": 1200
+    },
+    {
+      "key": "recruit.candidature.08",
+      "label": "Les champs marqués * sont obligatoires.",
+      "group": "Recrutement · candidature",
+      "defaultValue": "Les champs marqués * sont obligatoires.",
+      "maxLength": 1200
+    }
+  ],
+  "config": {
+    "texts": {
+      "home.navigation.01": "Aller au contenu",
+      "nav.agency": "L’agence",
+      "nav.services": "Nos prestations",
+      "nav.recruit": "Rejoindre l’équipe",
+      "nav.contact": "On en parle ?",
+      "home.hero.01": "Agence d’animations commerciales · Guadeloupe",
+      "home.hero.02": "VOS ANIMATIONS",
+      "home.hero.03": "PRENNENT VIE !",
+      "home.hero.04": "On conçoit, produit et anime vos opérations commerciales.",
+      "home.hero.05": "Demander un devis",
+      "home.hero.06": "Découvrir nos prestations",
+      "home.hero.07": "ON PASSE",
+      "home.hero.08": "À L’ACTION !",
+      "home.hero.09": "Créativité dans les idées.",
+      "home.hero.10": "Énergie sur le terrain.",
+      "home.bandeau.01": "Une animation n’est pas un stand. C’est une rencontre. Une expérience. Une émotion. Un souvenir. Un déclencheur de ventes.",
+      "home.trust.01": "Ils nous font confiance",
+      "home.agence.01": "01 / L’AGENCE",
+      "home.agence.02": "LES BONNES IDÉES",
+      "home.agence.03": "SE VIVENT",
+      "home.agence.04": "EN VRAI.",
+      "home.agence.05": "Une marque prend une autre dimension quand elle rencontre son public.",
+      "home.agence.06": "Après plus de dix ans à imaginer des campagnes et accompagner des marques, une conviction s’est imposée : les meilleures idées prennent vie sur le terrain.",
+      "home.agence.07": "C’est de cette conviction qu’est née",
+      "home.agence.08": "Fille de Pub",
+      "home.agence.09": ", une agence entièrement dédiée à l’activation commerciale.",
+      "home.agence.10": "Voici comment on s’y prend",
+      "home.prestations.01": "02 / NOS PRESTATIONS",
+      "home.prestations.02": "VOUS AVEZ UN PRODUIT.",
+      "home.prestations.03": "ON CRÉE",
+      "home.prestations.04": "L’EXPÉRIENCE.",
+      "home.prestations.05": "On s’occupe de tout !",
+      "home.prestations.06": "De l’idée à la réalisation, jusqu’au bilan.",
+      "home.prestations.07": "On imagine.",
+      "home.prestations.08": "La bonne idée, pour votre marque.",
+      "home.prestations.09": "Nous créons une animation sur mesure, pensée pour vos objectifs commerciaux et pour offrir à votre cible une expérience qui marque.",
+      "home.prestations.10": "Concept créatif",
+      "home.prestations.11": "Mécanique commerciale",
+      "home.prestations.12": "Scénographie",
+      "home.prestations.13": "Expérience client",
+      "home.prestations.14": "On produit.",
+      "home.prestations.15": "Des idées qui prennent forme.",
+      "home.prestations.16": "Nous donnons forme au dispositif : des décors à l’habillage, chaque élément met votre marque en scène.",
+      "home.prestations.17": "Décors",
+      "home.prestations.18": "Habillage",
+      "home.prestations.19": "Publicité sur le lieu de vente",
+      "home.prestations.20": "On installe.",
+      "home.prestations.21": "Tout est prêt pour le jour J.",
+      "home.prestations.22": "Nous organisons la logistique et l’installation de votre dispositif, puis son démontage à la fin de l’opération.",
+      "home.prestations.23": "Logistique",
+      "home.prestations.24": "Montage",
+      "home.prestations.25": "Démontage",
+      "home.prestations.26": "On anime.",
+      "home.prestations.27": "L’énergie qui crée la rencontre.",
+      "home.prestations.28": "Hôtesses, animateurs et influenceurs donnent vie à votre opération et créent le contact avec votre public.",
+      "home.prestations.29": "Hôtesses",
+      "home.prestations.30": "Animateurs",
+      "home.prestations.31": "Influenceurs",
+      "home.prestations.32": "On coordonne.",
+      "home.prestations.33": "Un seul interlocuteur pour tout orchestrer.",
+      "home.prestations.34": "Nous pilotons l’ensemble du projet et réalisons un bilan après chaque activation afin d’en mesurer les performances.",
+      "home.prestations.35": "Coordination",
+      "home.prestations.36": "Gestion de projet",
+      "home.prestations.37": "Bilan & reporting",
+      "home.prestations.38": "Parlons de votre animation",
+      "home.promises.01": "03 / NOTRE FAÇON DE FAIRE",
+      "home.promises.02": "DU FUN DANS L’ANIMATION.",
+      "home.promises.03": "DU SÉRIEUX",
+      "home.promises.04": "DANS L’EXÉCUTION.",
+      "home.promises.05": "Clés en main.",
+      "home.promises.06": "On s’occupe de tout.",
+      "home.promises.07": "De l’idée à la réalisation,",
+      "home.promises.08": "jusqu’au bilan.",
+      "home.promises.09": "Pas comme",
+      "home.promises.10": "les autres.",
+      "home.promises.11": "Un œil créatif pour faire de votre animation un véritable outil marketing.",
+      "home.promises.12": "À votre",
+      "home.promises.13": "image.",
+      "home.promises.14": "Un dispositif sur mesure, adapté à votre marque et à vos objectifs.",
+      "home.promises.15": "Mesurable.",
+      "home.promises.16": "Des performances mesurées après chaque activation pour faire le point.",
+      "home.contact.01": "04 / ON EN PARLE ?",
+      "home.contact.02": "ET SI VOTRE PROCHAINE",
+      "home.contact.03": "CAMPAGNE",
+      "home.contact.04": "ÉTAIT À VIVRE ?",
+      "home.contact.05": "Racontez-nous votre projet.",
+      "home.contact.06": "Quelques mots suffisent pour commencer.",
+      "home.contact.08": "Agence basée en Guadeloupe",
+      "home.contact.09": "Copier l’adresse",
+      "home.contact.10": "Votre projet commence ici.",
+      "home.contact.11": "Décrivez-nous votre projet. Les champs marqués * sont obligatoires.",
+      "footer.tagline": "Vos animations prennent vie !",
+      "footer.privacy": "Confidentialité",
+      "footer.top": "Retour en haut",
+      "recruit.navigation.01": "Aller au contenu",
+      "recruit.recruit-hero.01": "REJOINDRE L’ÉQUIPE",
+      "recruit.recruit-hero.02": "DU TALENT.",
+      "recruit.recruit-hero.03": "DE L’ÉNERGIE.",
+      "recruit.recruit-hero.04": "VOUS, SUR LE TERRAIN.",
+      "recruit.recruit-hero.05": "Vous aimez le contact, les rencontres et les expériences qui marquent ? Faites connaissance avec Fille de Pub.",
+      "recruit.recruit-hero.06": "Présenter mon profil",
+      "recruit.section-wrap.01": "DES MISSIONS, DES RENCONTRES",
+      "recruit.section-wrap.02": "VOTRE ÉNERGIE",
+      "recruit.section-wrap.03": "FAIT LA DIFFÉRENCE.",
+      "recruit.section-wrap.04": "Animateur ou animatrice indépendant·e, freelance, étudiant·e ou disponible pour des missions ponctuelles : présentez-nous votre profil.",
+      "recruit.section-wrap.05": "Créer le contact.",
+      "recruit.section-wrap.06": "Accueillir le public, faire découvrir une marque et donner envie de participer.",
+      "recruit.section-wrap.07": "Faire vivre l’expérience.",
+      "recruit.section-wrap.08": "Apporter votre enthousiasme et votre sérieux à chaque animation.",
+      "recruit.section-wrap.09": "Selon vos disponibilités.",
+      "recruit.section-wrap.10": "Indiquez vos zones de déplacement et vos créneaux pour nous aider à vous proposer des missions adaptées.",
+      "recruit.candidature.01": "FAISONS CONNAISSANCE",
+      "recruit.candidature.02": "LE PROCHAIN",
+      "recruit.candidature.03": "TALENT,",
+      "recruit.candidature.04": "C’EST VOUS ?",
+      "recruit.candidature.05": "Quelques informations pour rejoindre notre base de profils et être contacté·e lorsqu’une mission peut vous correspondre.",
+      "recruit.candidature.06": "Votre inscription ne constitue pas une promesse de mission. Aucun CV n’est nécessaire pour ce premier contact.",
+      "recruit.candidature.07": "Votre profil",
+      "recruit.candidature.08": "Les champs marqués * sont obligatoires."
+    },
+    "theme": {
+      "yellow": "#ffce00",
+      "ink": "#18191a",
+      "pink": "#f4a7c4",
+      "blue": "#a6dcf0",
+      "muted": "#5a5b5d",
+      "white": "#ffffff",
+      "bodyFont": "arial",
+      "headingFont": "arial"
+    },
+    "images": {
+      "hero": {
+        "src": "/assets/activation-960.webp",
+        "alt": "Illustration d’une animation commerciale : une animatrice accueille des visiteurs autour d’une roue de jeu.",
+        "width": 1536,
+        "height": 1024
+      },
+      "logoDark": {
+        "src": "/assets/logo-fille-de-pub-noir.svg",
+        "alt": "Fille de Pub",
+        "width": 2094,
+        "height": 709
+      },
+      "logoLight": {
+        "src": "/assets/logo-fille-de-pub-blanc.svg",
+        "alt": "Fille de Pub",
+        "width": 2094,
+        "height": 709
+      }
+    },
+    "clients": [
+      {
+        "src": "/assets/client-sos-pc-mobile.webp",
+        "alt": "SOS PC Mobile",
+        "width": 447,
+        "height": 447
+      },
+      {
+        "src": "/assets/client-croque-moi.webp",
+        "alt": "Croque & Moi",
+        "width": 661,
+        "height": 246
+      },
+      {
+        "src": "/assets/client-ekhaya.webp",
+        "alt": "Ekhaya Home Deco",
+        "width": 225,
+        "height": 225
+      }
+    ],
+    "gallery": [],
+    "contactEmail": "allo@filledepub.com"
+  }
+}

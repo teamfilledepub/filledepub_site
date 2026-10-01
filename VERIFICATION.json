@@ -1,23 +1,24 @@
 {
   "project": "Fille de Pub",
   "repository": "teamfilledepub/filledepub_site",
-  "date": "2026-09-26",
-  "hosting": "Cloudflare Workers Static Assets",
+  "date": "2026-10-01",
+  "hosting": "Cloudflare Workers Static Assets + Durable Object SQLite",
   "public_url": "https://filledepub-site.l-losange.workers.dev/",
   "checks": {
     "javascript_syntax": "passed",
+    "css_syntax": "passed",
     "build": "passed",
     "workers_deploy_dry_run": "passed",
-    "html_anchors_and_assets": "passed",
-    "scroll_and_accordion_simulation": "passed",
-    "quote_validation_and_encoding": "passed",
-    "preview_and_production_seo_builds": "passed",
-    "client_pdf_text_and_assets": "passed",
-    "logo_pixel_integrity": "passed",
-    "css_syntax": "passed"
+    "backend_integration_tests": "11 assertions/subtests passed in local Workers runtime",
+    "persistent_storage_restart": "passed",
+    "anonymous_contact_access": "blocked",
+    "csrf_cross_origin": "blocked",
+    "csv_formula_safety": "passed",
+    "text_html_escaping": "passed",
+    "pdf_volume_2_visual_review": "pending_live_deployment"
   },
   "physical_iphone_safari": "not_tested",
-  "automatic_email_sending": "not_configured; client prepares an email for the visitor to send",
+  "automatic_email_sending": "not_configured; forms persist requests in the private contact database",
   "custom_domain": "pending_connection_confirmation",
   "legal_notice": "pending_verified_publisher_details",
   "actual_campaign_photos": "pending_client_assets",
@@ -30,5 +31,25 @@
     ],
     "source": "Corrections site FDP(1).pdf",
     "tracking": "docs/corrections-2026-09-26.md"
+  },
+  "administration": "implemented; requires ADMIN_PASSWORD secret in Cloudflare",
+  "volume_2": {
+    "source": "Correction site fille de pub volume 2.pdf",
+    "corrections": [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "tracking": "docs/corrections-volume-2.md"
   }
 }

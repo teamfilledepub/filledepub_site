@@ -19,17 +19,20 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(source, output, { recursive: true, filter: path => !path.endsWith('/activation.png') });
 
-let html = await readFile(new URL('index.html', source), 'utf8');
-html = html.replaceAll('https://filledepub-site.l-losange.workers.dev', origin)
-  .replace(/<meta name="robots" content="[^"]+">/, `<meta name="robots" content="${indexable ? 'index, follow' : 'noindex, follow'}">`);
-if (indexable) html = html.replace('</head>', `  <link rel="canonical" href="${origin}/">\n</head>`);
-await writeFile(new URL('index.html', output), html);
+const pages = [['index.html', '/'], ['recrutement/index.html', '/recrutement/'], ['confidentialite/index.html', '/confidentialite/']];
+for (const [file, path] of pages) {
+  let html = await readFile(new URL(file, source), 'utf8');
+  html = html.replaceAll('https://filledepub-site.l-losange.workers.dev', origin)
+    .replace(/<meta\b(?=[^>]*name="robots")[^>]*>/, `<meta name="robots" content="${indexable ? 'index, follow' : 'noindex, follow'}">`);
+  if (indexable) html = html.replace('</head>', `  <link rel="canonical" href="${origin}${path}">\n</head>`);
+  await writeFile(new URL(file, output), html);
+}
 
 let headers = await readFile(new URL('_headers', source), 'utf8');
 headers = headers.replace(/^  X-Robots-Tag:.*\n?/m, indexable ? '' : '  X-Robots-Tag: noindex, follow\n');
 await writeFile(new URL('_headers', output), headers);
-await writeFile(new URL('robots.txt', output), `User-agent: *\nAllow: /\n${indexable ? `\nSitemap: ${origin}/sitemap.xml\n` : ''}`);
+await writeFile(new URL('robots.txt', output), `User-agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\n${indexable ? `\nSitemap: ${origin}/sitemap.xml\n` : ''}`);
 if (indexable) {
-  await writeFile(new URL('sitemap.xml', output), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>${origin}/</loc></url></urlset>\n`);
+  await writeFile(new URL('sitemap.xml', output), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.map(([, path]) => `<url><loc>${origin}${path}</loc></url>`).join('')}</urlset>\n`);
 }
 console.log(`Fille de Pub : site prêt dans dist/ (${indexable ? 'référencement activé' : 'version non indexée'}).`);
