@@ -16,7 +16,7 @@ Les libellés techniques des formulaires et la notice de confidentialité resten
 ## Images et logos
 
 1. Importer un fichier JPEG, PNG ou WebP (20 Mo maximum avant optimisation).
-2. Le choisir dans la liste de l’emplacement concerné : photo principale, logo sur fond clair ou logo sur fond sombre.
+2. Le choisir dans la liste de l’emplacement concerné : photo de l’accueil, photo du recrutement, logo sur fond clair ou logo sur fond sombre. Les deux photos de page sont indépendantes.
 3. Vérifier la description ; elle sert aussi aux visiteurs utilisant un lecteur d’écran.
 4. Publier.
 

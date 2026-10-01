@@ -14,7 +14,7 @@ if (indexable && url.hostname.endsWith('.workers.dev')) {
   throw new Error('Renseigner le domaine définitif avant d’activer le référencement.');
 }
 const origin = url.origin;
-await Promise.all(['activation-640.webp', 'activation-960.webp', 'activation-1536.webp', 'share-card.png'].map(name => stat(new URL(`assets/${name}`, source))));
+await Promise.all(['activation-logo.svg', 'recrutement-640.webp', 'recrutement-960.webp', 'recrutement-1536.webp', 'share-card.png'].map(name => stat(new URL(`assets/${name}`, source))));
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(source, output, { recursive: true, filter: path => !path.endsWith('/activation.png') });

@@ -1,6 +1,14 @@
 import defaults from './content-defaults.json' with { type: 'json' };
 
 export { defaults };
+const legacyHeroSources = new Set(['/assets/activation-640.webp', '/assets/activation-960.webp', '/assets/activation-1536.webp']);
+export function resolveConfig(stored = {}) {
+  const base = structuredClone(defaults.config);
+  const config = { ...base, ...stored, texts: { ...base.texts, ...stored.texts }, images: { ...base.images, ...stored.images } };
+  // Upgrade only the supplied stock image; preserve any image uploaded by the owner.
+  if (legacyHeroSources.has(config.images.hero?.src)) config.images.hero = { ...config.images.hero, src: base.images.hero.src };
+  return config;
+}
 export const fonts = {
   arial: 'Arial, Helvetica, sans-serif',
   trebuchet: '"Trebuchet MS", Arial, sans-serif',
@@ -29,7 +37,9 @@ export function validateContact(body) {
     if (!/^[+()\d .-]{6,30}$/.test(data.phone) || (data.phone.match(/\d/g)||[]).length<6) throw new HttpError(400, 'Téléphone invalide.');
     data.city = plain(body.city, 100, 'Ville', true);
     data.profile = plain(body.profile, 100, 'Profil', true);
-    if (!['Animateur / animatrice indépendant·e', 'Freelance', 'Étudiant·e', 'Missions ponctuelles', 'Autre profil'].includes(data.profile)) throw new HttpError(400, 'Choisissez un profil dans la liste.');
+    // Accept a form left open before volume 3 without retaining the obsolete label.
+    if (['Freelance', 'Animateur / animatrice indépendant·e'].includes(data.profile)) data.profile = 'Indépendant';
+    if (!['Indépendant', 'Étudiant·e', 'Missions ponctuelles', 'Autre profil'].includes(data.profile)) throw new HttpError(400, 'Choisissez un profil dans la liste.');
     data.availability = plain(body.availability, 800, 'Disponibilités', true);
     data.mobility = plain(body.mobility, 200, 'Zones de déplacement');
     data.experience = plain(body.experience, 2000, 'Présentation');
@@ -43,7 +53,7 @@ export function validateContact(body) {
   data.consentVersion = '2026-10-01';
   return data;
 }
-const staticSources = new Set(Object.values(defaults.config.images).map(i => i.src).concat(defaults.config.clients.map(i => i.src)));
+const staticSources = new Set([...Object.values(defaults.config.images).map(i => i.src), ...defaults.config.clients.map(i => i.src), ...legacyHeroSources]);
 export function validateConfig(input) {
   if (!input || typeof input !== 'object' || !input.texts || !input.theme || !input.images) throw new HttpError(400, 'Configuration incomplète.');
   const contactEmail=plain(input.contactEmail ?? defaults.config.contactEmail,160,'E-mail de contact',true);
@@ -62,7 +72,8 @@ export function validateConfig(input) {
     if (!item || typeof item.src !== 'string' || !(staticSources.has(item.src) || /^\/media\/[a-f0-9-]{36}$/.test(item.src))) throw new HttpError(400, 'Choisissez une image de la médiathèque.');
     return { src: item.src, alt: plain(item.alt, 250, 'Description de l’image', true), width: Number.isInteger(item.width) && item.width > 0 && item.width <= 10000 ? item.width : 1200, height: Number.isInteger(item.height) && item.height > 0 && item.height <= 10000 ? item.height : 800 };
   };
-  for (const key of ['hero', 'logoDark', 'logoLight']) config.images[key] = image(input.images[key]);
+  const images = resolveConfig(input).images;
+  for (const key of Object.keys(defaults.config.images)) config.images[key] = image(images[key]);
   for (const [key, limit] of [['clients', 36], ['gallery', 30]]) {
     if (!Array.isArray(input[key]) || input[key].length > limit) throw new HttpError(400, `Nombre d’images trop élevé (${limit} maximum).`);
     config[key] = input[key].map(image);

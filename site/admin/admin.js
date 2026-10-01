@@ -36,7 +36,8 @@
   $('#text-group').addEventListener('change', () => document.querySelectorAll('.copy-group').forEach(el => el.hidden = $('#text-group').value !== 'all' && el.dataset.group !== $('#text-group').value));
   function availableImages() {
     const originals = [
-      {src:'/assets/activation-960.webp',name:'Animation commerciale',width:1536,height:1024},
+      {src:'/assets/activation-logo.svg',name:'Accueil — logo officiel',width:1536,height:1024},
+      {src:'/assets/recrutement-960.webp',name:'Recrutement — animateur commercial',width:1536,height:1024},
       {src:'/assets/logo-fille-de-pub-noir.svg',name:'Logo Fille de Pub noir',width:2094,height:709},
       {src:'/assets/logo-fille-de-pub-blanc.svg',name:'Logo Fille de Pub blanc',width:2094,height:709},
       {src:'/assets/client-sos-pc-mobile.webp',name:'SOS PC Mobile',width:447,height:447},
@@ -65,7 +66,7 @@
   }
   function renderImages() {
     const main = $('#main-images'); main.replaceChildren();
-    for (const [key,title] of [['hero','Photo principale'],['logoDark','Logo sur fond clair'],['logoLight','Logo sur fond sombre']]) main.append(imageCard(state.config.images[key],title,null,key==='logoLight'));
+    for (const [key,title] of [['hero','Photo de l’accueil'],['recruitHero','Photo du recrutement'],['logoDark','Logo sur fond clair'],['logoLight','Logo sur fond sombre']]) main.append(imageCard(state.config.images[key],title,null,key==='logoLight'));
     for (const [key,selector] of [['clients','#client-images'],['gallery','#gallery-images']]) {
       const container = $(selector); container.replaceChildren();
       state.config[key].forEach((item,index) => container.append(imageCard(item,(key==='clients'?'Logo client ':'Photo ')+(index+1),()=>{state.config[key].splice(index,1);markDirty();renderImages();})));

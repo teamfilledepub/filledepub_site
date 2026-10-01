@@ -1,4 +1,4 @@
-import { defaults, HttpError, validateContact, validateConfig, themeCss, escapeHtml, csvCell } from './validation.mjs';
+import { defaults, resolveConfig, HttpError, validateContact, validateConfig, themeCss, escapeHtml, csvCell } from './validation.mjs';
 
 const DAY = 86400000;
 const COOKIE = '__Host-fdp_session';
@@ -108,8 +108,8 @@ export class SiteStore {
     const row = this.sql.exec('SELECT revision,config,updated_at FROM site_state WHERE id=1').toArray()[0];
     if (!row) return { revision: 0, updatedAt: null, config: structuredClone(defaults.config) };
     const stored = JSON.parse(row.config);
-    // New copy keys added by a later deployment receive their checked-in defaults.
-    return { revision: row.revision, updatedAt: row.updated_at, config: { ...defaults.config, ...stored, texts: { ...defaults.config.texts, ...stored.texts } } };
+    // Add new editable fields and image slots without discarding existing custom content.
+    return { revision: row.revision, updatedAt: row.updated_at, config: resolveConfig(stored) };
   }
   clean() {
     const now = Date.now();

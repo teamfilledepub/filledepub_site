@@ -5,11 +5,28 @@ import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { build } from 'esbuild';
 import { Miniflare, convertV4MiniflareOptions } from 'miniflare';
-import { defaults, validateConfig, csvCell } from '../src/validation.mjs';
+import { defaults, resolveConfig, validateContact, validateConfig, csvCell } from '../src/validation.mjs';
 
 const origin = 'https://fdp.test';
 const password = 'local-only-test-credential-2026';
-const candidate = () => ({type:'candidature',idempotencyKey:crypto.randomUUID(),name:'Profil de test',email:'test@example.invalid',phone:'+590 690 00 00 00',city:'Ville de test',profile:'Freelance',availability:'Week-end',experience:'Données fictives',consent:true});
+const candidate = () => ({type:'candidature',idempotencyKey:crypto.randomUUID(),name:'Profil de test',email:'test@example.invalid',phone:'+590 690 00 00 00',city:'Ville de test',profile:'Indépendant',availability:'Week-end',experience:'Données fictives',consent:true});
+
+test('Volume 3 upgrades saved stock assets while preserving owner content and old open forms', () => {
+  const saved = structuredClone(defaults.config);
+  delete saved.images.recruitHero;
+  saved.images.hero.src = '/assets/activation-960.webp';
+  saved.texts['nav.agency'] = 'Notre agence';
+  saved.theme.yellow = '#ffd700';
+  const upgraded = resolveConfig(saved);
+  assert.equal(upgraded.images.hero.src, '/assets/activation-logo.svg');
+  assert.equal(upgraded.images.recruitHero.src, '/assets/recrutement-960.webp');
+  assert.equal(upgraded.texts['nav.agency'], 'Notre agence');
+  assert.equal(upgraded.theme.yellow, '#ffd700');
+  assert.equal(validateConfig(saved).images.recruitHero.src, upgraded.images.recruitHero.src);
+  saved.images.hero.src = '/media/11111111-1111-4111-8111-111111111111';
+  assert.equal(resolveConfig(saved).images.hero.src, saved.images.hero.src);
+  assert.equal(validateContact({...candidate(), profile:'Freelance'}).profile, 'Indépendant');
+});
 
 test('Contact storage, authentication, publication and image isolation', async t => {
   await mkdir(resolve('.wrangler'), {recursive:true});
@@ -76,7 +93,7 @@ test('Contact storage, authentication, publication and image isolation', async t
     await t.test('CSV export includes contacts and neutralizes spreadsheet formulas',async()=>{
       const body={type:'demande',idempotencyKey:crypto.randomUUID(),name:'=HYPERLINK("bad")',email:'lead@example.invalid',project:'Projet fictif',consent:true};
       assert.equal((await request('/api/contacts','POST',body)).status,201);
-      const csv=await (await request('/api/admin/contacts/export','GET',undefined,cookie)).text();assert.ok(csv.includes("'=HYPERLINK"));assert.ok(csv.includes('test@example.invalid'));assert.ok(csv.includes('lead@example.invalid'));
+      const csv=await (await request('/api/admin/contacts/export','GET',undefined,cookie)).text();assert.ok(csv.includes("'=HYPERLINK"));assert.ok(csv.includes('test@example.invalid'));assert.ok(csv.includes('lead@example.invalid'));assert.ok(csv.includes('Indépendant'));
       const filtered=await(await request('/api/admin/contacts?type=candidature','GET',undefined,cookie)).json();assert.equal(filtered.contacts.length,1);contactId=filtered.contacts[0].id;
       assert.equal(csvCell('+590123'),'"\'+590123"');
     });

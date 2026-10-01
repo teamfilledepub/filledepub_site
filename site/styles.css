@@ -218,3 +218,25 @@ button:disabled { cursor: wait; opacity: .65; }
  .recruit-details h2,.candidate-grid h2{font-size:32px}.recruit-points article{padding-left:50px}.recruit-points h3{font-size:23px}.gallery-grid{grid-template-columns:1fr}
  .client-list{grid-template-columns:repeat(3,minmax(0,1fr))}.client-croque{grid-column:auto}.footer-links{order:4;flex-basis:100%;justify-content:center;margin:0 auto}.typewriter-stage{font-size:18px}
 }
+
+/* Volume 3: constrain the native date control, including Safari's internal value. */
+.quote-fields input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  min-height: 48px;
+  text-align: left;
+}
+.quote-fields input[type="date"]::-webkit-date-and-time-value {
+  min-height: 1.5em;
+  min-width: 0;
+  text-align: left;
+}
+.quote-fields input[type="date"]::-webkit-datetime-edit { padding: 0; }
+.recruit-details > div > h2:first-child { margin-top: 0; }
